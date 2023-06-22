@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color</title>
+    <style>
+        .div{
+            max-width: 1200px;
+            height: 350px;
+            background:black ;
+            display: block;
+        }
+        .btn{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+<div class="div"></div>
+<button class="btn-1">Change color</button>
+<button class="btn-2">Change color</button>
+<button class="btn-3">Change color</button>
+<script>
+    let block= document.querySelector('.div');
+    let btn1= document.querySelector('.btn-1');
+    let btn2= document.querySelector('.btn-2');
+    let btn3= document.querySelector('.btn-3');
+    console.log(222);
+    let arr1 = ['green', 'white','blue'];
+    let i =0;
+    btn1.onclick = () => {
+        block.style.backgroundColor = arr1[0]
+    }
+    btn2.onclick = () => {
+        block.style.backgroundColor = arr1[1]
+    }
+    btn3.onclick = () => {
+        block.style.backgroundColor = arr1[2]
+    }
+</script>
+</body>
+</html>
